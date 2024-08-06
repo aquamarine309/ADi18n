@@ -200,13 +200,13 @@ export const v = {
     shardReduction: {
       id: 1,
       reward: () => $t("v_milestone_1_reward"),
-      description: () => $t("v_milestone_1_description", formatInt(2)),
+      description: () => $t("have_X_v_achievements", formatInt(2)),
       requirement: () => V.spaceTheorems >= 2
     },
     adPow: {
       id: 2,
       reward: () => $t("v_milestone_2_reward"),
-      description: () => $t("v_milestone_2_description", formatInt(5)),
+      description: () => $t("have_X_v_achievements", formatInt(5)),
       effect: () => 1 + Math.sqrt(V.spaceTheorems) / 100,
       format: x => formatPow(x, 3, 3),
       requirement: () => V.spaceTheorems >= 5
@@ -214,7 +214,7 @@ export const v = {
     fastAutoEC: {
       id: 3,
       reward: () => $t("v_milestone_3_reward"),
-      description: () => $t("v_milestone_3_description", formatInt(10)),
+      description: () => $t("have_X_v_achievements", formatInt(10)),
       effect: () => Achievements.power,
       // Base rate is 60 ECs at 20 minutes each
       format: x => (Ra.unlocks.instantECAndRealityUpgradeAutobuyers.canBeApplied
@@ -225,13 +225,13 @@ export const v = {
     autoAutoClean: {
       id: 4,
       reward: () => $t("v_milestone_4_reward"),
-      description: () => $t("v_milestone_4_description", formatInt(16)),
+      description: () => $t("have_X_v_achievements", formatInt(16)),
       requirement: () => V.spaceTheorems >= 16
     },
     achievementBH: {
       id: 5,
       reward: () => $t("v_milestone_5_reward"),
-      description: () => $t("v_milestone_5_description", formatInt(30)),
+      description: () => $t("have_X_v_achievements", formatInt(30)),
       effect: () => Achievements.power,
       format: x => formatX(x, 2, 0),
       requirement: () => V.spaceTheorems >= 30
@@ -241,7 +241,7 @@ export const v = {
       reward() {
         return $t("v_milestone_6_reward", formatInt(2));
       },
-      description: () => $t("v_milestone_6_description", formatInt(36)),
+      description: () => $t("have_X_v_achievements", formatInt(36)),
       effect: 2,
       requirement: () => V.spaceTheorems >= 36
     }
