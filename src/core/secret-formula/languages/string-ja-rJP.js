@@ -2705,6 +2705,7 @@ export const jaJP = {
   "reality_mode": "現実モード:",
   "reality_noun": "現実",
   "reality_reset_confirmation_X": "現実のやり直し: $1",
+  "reality_shards": "現実の欠片",
   "reality_shards_X": "現実の欠片: $1",
   "reality_shards_increased_from_X_to_Y": "現実の欠片 が増加$1 ➜ $2",
   "reality_shards_short": "RS",
