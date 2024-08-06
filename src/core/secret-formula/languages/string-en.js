@@ -3236,6 +3236,7 @@ export const en = {
   "reality_mode": "Reality mode:",
   "reality_noun": "Reality",
   "reality_reset_confirmation_X": "Reset Reality: $1",
+  "reality_shards": "Reality Shards",
   "reality_shards_X": "Reality Shards: $1",
   "reality_shards_increased_from_X_to_Y": "Reality Shards increased from$1 to $2",
   "reality_shards_short": "RS",

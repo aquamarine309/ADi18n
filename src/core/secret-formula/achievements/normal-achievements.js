@@ -409,8 +409,9 @@ export const normalAchievements = [
     description: () => $t("achievement_76_tooltip", formatInt(8)),
     checkRequirement: () => Time.totalTimePlayed.totalDays >= 8,
     checkEvent: GAME_EVENT.GAME_TICK_AFTER,
+    reward: () => $t("achievement_76_reward"),
     effect: () => Math.max(Math.pow(Time.totalTimePlayed.totalDays / 2, 0.05), 1),
-    formatEffect: value => `${formatX(value, 2, 2)}`
+    formatEffect: value => formatX(value, 2, 2)
   },
   {
     id: 77,
