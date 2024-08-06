@@ -44,19 +44,19 @@ export default {
           activityToken: () => player.dilation.active
         },
         {
-          name: token => $t(`ec_name`, token),
+          name: token => $t(`ec_name`, token.toString()),
           type: "Eternity Challenge",
           isActive: token => token > 0,
           activityToken: () => player.challenge.eternity.current
         },
         {
-          name: token => $t(`ic_name`, token),
+          name: token => $t(`ic_name`, token.toString()),
           type: "Infinity Challenge",
           isActive: token => token > 0,
           activityToken: () => player.challenge.infinity.current
         },
         {
-          name: token => $t(`nc_name`, token),
+          name: token => $t(`nc_name`, token.toString()),
           type: "Normal Challenge",
           isActive: token => token > 0,
           activityToken: () => player.challenge.normal.current
